@@ -1,0 +1,9 @@
+speech_recognition as sr
+pyttsx3
+setuptools
+webbrowser
+datetime
+os
+google.generativeai as genai
+songs
+time
