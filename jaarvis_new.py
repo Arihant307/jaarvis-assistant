@@ -84,7 +84,7 @@ def processCommand(c):
     elif "stop" or "abort"in c.lower():
         return
     else:
-        url="AIzaSyDTqda335hRx6HKPCnp8ok5gQb6AvL2cZU"
+        
         genai.configure(api_key="Enter Your API")
 
         model = genai.GenerativeModel("Enter Gemini Model")
