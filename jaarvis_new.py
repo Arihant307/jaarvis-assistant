@@ -84,9 +84,9 @@ def processCommand(c):
     
     else:
         
-        genai.configure(api_key="AIzaSyAH-7aFZmLdEVmMZlc8dxtzBGIqGMdyHl4")
+        genai.configure(api_key="Enter your API KEy")
         
-        model = genai.GenerativeModel("gemini-2.5-flash")
+        model = genai.GenerativeModel("Enter Your Gemini")
         response = model.generate_content(c)
         speak(response.text)
 
