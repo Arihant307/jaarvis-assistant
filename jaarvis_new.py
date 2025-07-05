@@ -81,13 +81,12 @@ def processCommand(c):
         webbrowser.open(link)
     elif "time"in c.lower():
         speak(time.ctime())
-    elif "stop" or "abort"in c.lower():
-        return
+    
     else:
         
-        genai.configure(api_key="Enter Your API")
-
-        model = genai.GenerativeModel("Enter Gemini Model")
+        genai.configure(api_key="AIzaSyAH-7aFZmLdEVmMZlc8dxtzBGIqGMdyHl4")
+        
+        model = genai.GenerativeModel("gemini-2.5-flash")
         response = model.generate_content(c)
         speak(response.text)
 
